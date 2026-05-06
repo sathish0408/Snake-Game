@@ -29,7 +29,7 @@ function Login() {
 
   const handleLogin = async () => {
     try {
-      const res = await fetch("http://localhost:5000/login", {
+      const res = await fetch("https://snake-game-tk4r.onrender.com/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -116,7 +116,7 @@ function Register() {
     }
   
     try {
-      const res = await fetch("http://localhost:5000/register", {
+      const res = await fetch("https://snake-game-tk4r.onrender.com/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
