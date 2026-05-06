@@ -1,0 +1,70 @@
+/* ---------- Global ---------- */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- Form Container ---------- */
+.form-container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  width: 320px;
+  margin: 100px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* ---------- Inputs ---------- */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* ---------- Links ---------- */
+.link {
+  color: #007bff;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Dashboard ---------- */
+.dashboard-container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* ---------- Logout Button ---------- */
+.logout-btn {
+  background-color: #dc3545;
+}
+
+.logout-btn:hover {
+  background-color: #c82333;
+}
