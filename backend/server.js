@@ -12,7 +12,7 @@ const PORT = 5000;
 const JWT_SECRET = "secretkey"; // move to .env later
 
 /* ---------- CONNECT DB ---------- */
-mongoose.connect("mongodb://127.0.0.1:27017/authdb")
+mongoose.connect("mongodb+srv://satya:satya1204@satya.nsd8l5a.mongodb.net/authdb")
   .then(() => console.log("MongoDB connected"))
   .catch(err => console.error("DB Error:", err));
 
