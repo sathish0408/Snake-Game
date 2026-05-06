@@ -3,18 +3,19 @@ const cors = require("cors");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const mongoose = require("mongoose");
+require("dotenv").config();
 
 const app = express();
 app.use(express.json());
 app.use(cors());
 
 const PORT = 5000;
-const JWT_SECRET = "secretkey"; // move to .env later
+const JWT_SECRET = process.env.JWT_SECRET; // move to .env later
 
 /* ---------- CONNECT DB ---------- */
-mongoose.connect("mongodb+srv://satya:satya1204@satya.nsd8l5a.mongodb.net/authdb")
+mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB connected"))
-  .catch(err => console.error("DB Error:", err));
+  .catch(err => console.log("DB Error:", err));
 
 /* ---------- MODEL ---------- */
 const userSchema = new mongoose.Schema({
